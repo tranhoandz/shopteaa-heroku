@@ -29,8 +29,6 @@ Route::group(['prefix' => '/', 'namespace' => 'Frontend'], function () {
 	// profile
 	Route::get('/tai-khoan-cua-toi.html/{id}', 'UserController@profile')->name('profile');
 	Route::post('/tai-khoan-cua-toi.html/{id}', 'UserController@post_profile');
-
-
 	Route::get('/tai-khoan-cua-toi.html/change-pass/{id}', 'UserController@change_pass')->name('change-pass');
 	Route::post('/tai-khoan-cua-toi.html/change-pass/{id}', 'UserController@post_change_pass');
 	// end profile
